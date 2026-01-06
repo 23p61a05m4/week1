@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+</head>
+<body>
+
+    <h2>Register an Account</h2>
+
+    <form action="register.php" method="POST">
+        <div>
+            <label for="email">Email:</label>
+            <!-- The input type="email" provides basic client-side validation -->
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <!-- The input type="password" hides the characters as the user types -->
+            <input type="password" id="password" name="password" required placeholder="Create a password">
+        </div>
+        <br>
+        <div>
+            <label for="psw-repeat">Repeat Password:</label>
+            <input type="password" id="psw-repeat" name="psw-repeat" required placeholder="Repeat your password">
+        </div>
+        <br>
+        <!-- The submit button sends the form data to the action URL -->
+        <button type="submit">Register</button>
+    </form>
+
+    <p>Already have an account? <a href="signin.html">Sign in</a></p>
+
+</body>
+</html>
